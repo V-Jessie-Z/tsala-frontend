@@ -1,30 +1,87 @@
-<nav class="navbar navbar-expand-lg " style="background-color:#561111;">
+<nav class="navbar navbar-expand-lg" style="background-color: #561111;">
     <div class="container-fluid">
       <a class="navbar-brand" routerLink="/home">
-        <img src="assets/images/tsala-logo.png" alt="Logo" width="150" height="150" class="me-2" />
+        <img src="assets/images/tsala-logo.png" alt="Logo" width="100" height="100" class="me-2" />
       </a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
+      <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+  
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" routerLink="/home">Home</a>
+          
+            <!-- Home -->
+            <li class="nav-item">
+                <a class="nav-link text-white" routerLink="/home">Home</a>
+              </li>
+          <!-- About -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white"  id="aboutDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              About
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" routerLink="/about">History</a></li>
+              <li><a class="dropdown-item" routerLink="/about/sports">Sports</a></li>
+              <li><a class="dropdown-item" routerLink="/about/extracurriculars">Extra Curriculars</a></li>
+            </ul>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="/about">About</a>
+  
+          <!-- Terms & Policies -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" id="termsDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Terms & Policies
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" routerLink="/policies/admissions">Admissions</a></li>
+              <li><a class="dropdown-item" routerLink="/policies/code-of-conduct">Code of Conduct</a></li>
+              <li><a class="dropdown-item" routerLink="/policies/dress-code">Dress Code</a></li>
+            </ul>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="/login">Login</a>
+  
+          <!-- Support -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" id="supportDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Support
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" routerLink="/support/sgb">Student Governing Body</a></li>
+              <li><a class="dropdown-item" routerLink="/support/parents">Parents Association</a></li>
+            </ul>
           </li>
+  
+          <!-- Staff -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" id="staffDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Staff
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" routerLink="/staff/sadza">Sadza Branch</a></li>
+              <li><a class="dropdown-item" routerLink="/staff/dema">Dema Branch</a></li>
+            </ul>
+          </li>
+  
+          <!-- Academic -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" id="academicDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Academic
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" routerLink="/academic/ecd">ECD</a></li>
+              <li><a class="dropdown-item" routerLink="/academic/primary">Primary School</a></li>
+            </ul>
+          </li>
+  
+          <!-- Login -->
+          <li class="nav-item">
+            <a class="nav-link text-white" routerLink="/login">Login</a>
+          </li>
+  
         </ul>
       </div>
     </div>

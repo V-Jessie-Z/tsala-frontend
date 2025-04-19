@@ -1,0 +1,18 @@
+
+.about{
+   margin: 40px 20px;
+   margin-right: 40px;
+   font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+
+.info{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.181);
+    padding: 20px 20px;
+    background-color: rgb(235, 235, 235)
+}
+
+.line{
+    background-color: #561111 ;
+    margin-top: -20px; 
+    margin-bottom: 5px;
+}
